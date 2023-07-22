@@ -1,18 +1,4 @@
-PhpBinaryReader
-===
-![PHP](https://github.com/iBotPeaches/php-binary-reader/workflows/PHP/badge.svg)
-
-Why the fork?
----
-It started as trying to dive into a bug on why signed 32bit reads were wrong, then I couldn't work on it locally
-due it not being supported to develop on latest (at the time), php 7.4. I got obsessed with adapting to new language
-features and it just kinda didn't stop until I explored GitHub Actions and more.
-
-Why?
----
-You probably wouldn't be here if you hadn't run into a scenario where you needed to leverage PHP to read a stream of
-binary data. The honest truth is PHP really stinks at this stuff, but as long as we're going to be using it we may as
-well do our best to make it as painless as possible.
+PhpBinaryReader\
 
 The purpose of this binary reader is to accept a string of file contents or file resource and provide a set of methods 
 inspired by .NET to traverse it.
