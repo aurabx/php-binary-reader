@@ -255,7 +255,14 @@ class BinaryReader
 
     public function readFromHandle(int $length): string
     {
-        $this->position += $length;
+        $this->advance($length);
         return fread($this->inputHandle, $length);
+    }
+    
+    public function advance(int $length): self
+    {
+        $this->position += $length;
+        
+        return $this;
     }
 }
